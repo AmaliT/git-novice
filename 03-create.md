@@ -13,11 +13,11 @@ we can start using it.
 Let's create a directory for our work and then move into that directory:
 
 ~~~ {.bash}
-$ mkdir planets
-$ cd planets
+$ mkdir Blueskies16
+$ cd Blueskies16
 ~~~
 
-Then we tell Git to make `planets` a [repository](reference.html#repository)&mdash;a place where
+Then we tell Git to make `Blueskies16` a [repository](reference.html#repository)&mdash;a place where
 Git can store versions of our files:
 
 ~~~ {.bash}
@@ -32,7 +32,7 @@ $ ls
 ~~~
 
 But if we add the `-a` flag to show everything,
-we can see that Git has created a hidden directory within `planets` called `.git`:
+we can see that Git has created a hidden directory within `Blueskies16` called `.git`:
 
 ~~~ {.bash}
 $ ls -a
@@ -61,17 +61,17 @@ nothing to commit (create/copy files and use "git add" to track)
 
 > ## Places to Create Git Repositories {.challenge}
 >
-> Dracula starts a new project, `moons`, related to his `planets` project.
+> Andy starts a new project, `ideas`, related to his `Blueskies16` project.
 > Despite Wolfman's concerns, he enters the following sequence of commands to
 > create one Git repository inside another:
 > 
 > ~~~ {.bash}
 > cd             # return to home directory
-> mkdir planets  # make a new directory planets
-> cd planets     # go into planets
+> mkdir Blueskies16  # make a new directory planets
+> cd Blueskies16     # go into planets
 > git init       # make the planets directory a Git repository
-> mkdir moons    # make a sub-directory planets/moons
-> cd moons       # go into planets/moons
+> mkdir ideas    # make a sub-directory planets/moons
+> cd ideas       # go into planets/moons
 > git init       # make the moons sub-directory a Git repository
 > ~~~
 > 
